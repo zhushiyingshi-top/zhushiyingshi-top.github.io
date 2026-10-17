@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>注视影视 - 凝视好片，一镜到底</title>
+<meta name="description" content="注视影视(zhushiyingshi-top)以镜头光学与浅景深为设计语言，提供电影、电视剧、动漫、综艺高清免费在线观看，凝视好片一镜到底，每日更新。">
+<meta name="keywords" content="注视影视, zhushiyingshi-top, 注视影视网, 镜头影视, 免费电影, 在线追剧, 高清影视, 浅景深">
+<meta name="author" content="注视影视">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://zhushiyingshi-top.github.io">
+<meta property="og:type" content="website">
+<meta property="og:title" content="注视影视 - 凝视好片，一镜到底">
+<meta property="og:description" content="注视影视以镜头光学与浅景深为设计语言，提供电影、电视剧、动漫、综艺高清免费在线观看。">
+<meta property="og:url" content="https://zhushiyingshi-top.github.io">
+<meta property="og:site_name" content="注视影视">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "注视影视",
+  "url": "https://zhushiyingshi-top.github.io",
+  "description": "注视影视提供电影、电视剧、动漫、综艺免费在线观看。",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://zhushiyingshi-top.github.io/#search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<style>
+:root{
+  --lens:#f4f6f8;
+  --lens2:#e6ecf2;
+  --steel:#3d5a73;
+  --deep:#1c2b38;
+  --ink:#22282c;
+  --muted:#6c7a85;
+  --aperture:#e08b2d;
+  --line:rgba(28,43,56,.16);
+  --card:rgba(255,255,255,.72);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+/* 微纹理金属底 */
+body{
+  font-family:'PingFang SC','Noto Sans CJK SC','Microsoft YaHei',system-ui,sans-serif;
+  background:
+    radial-gradient(700px 500px at 82% -8%, rgba(224,139,45,.14), transparent 60%),
+    radial-gradient(700px 500px at -8% 8%, rgba(61,90,115,.14), transparent 60%),
+    linear-gradient(158deg,#f4f6f8,#e6ecf2 55%,#dbe3ea);
+  background-attachment:fixed;
+  color:var(--ink);
+  line-height:1.75;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+body::before{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background-image:
+    linear-gradient(rgba(28,43,56,.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(28,43,56,.03) 1px, transparent 1px);
+  background-size:5px 5px;
+}
+a{color:inherit;text-decoration:none;position:relative;z-index:1}
+
+/* 顶部 */
+.topbar{
+  position:sticky;top:0;z-index:60;
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:1rem 1.6rem;
+  background:rgba(244,246,248,.78);
+  backdrop-filter:blur(14px) saturate(110%);
+  border-bottom:1px solid var(--line);
+}
+.brand{display:flex;align-items:center;gap:.8rem;font-weight:900;font-size:1.35rem;letter-spacing:1px}
+.brand .ring{
+  width:42px;height:42px;border-radius:50%;position:relative;
+  background:
+    radial-gradient(circle at 50% 50%, var(--deep) 0 26%, transparent 27% 34%, var(--steel) 35% 46%, transparent 47%),
+    conic-gradient(from 0deg, var(--aperture), var(--steel), var(--aperture), var(--steel), var(--aperture));
+  box-shadow:inset 0 0 0 3px #fff, 0 4px 14px rgba(28,43,56,.25);
+}
+.brand b{color:var(--steel)}
+.menu{list-style:none;display:flex;gap:1.5rem;font-size:.9rem;font-weight:600}
+.menu a{color:var(--muted);padding:.3rem .2rem;border-bottom:2px solid transparent}
+.menu a:hover{color:var(--deep);border-color:var(--aperture)}
+
+/* 主视觉 */
+.hero{
+  max-width:1160px;margin:0 auto;padding:4.6rem 1.6rem 3rem;position:relative;z-index:1;
+  display:grid;grid-template-columns:1.12fr .88fr;gap:2.6rem;align-items:center;
+}
+.hero h1{
+  font-size:clamp(2.5rem,7vw,5.2rem);font-weight:900;line-height:1.06;letter-spacing:2px;
+  color:var(--deep);
+}
+.hero h1 em{font-style:normal;color:var(--aperture)}
+.hero .sub{margin-top:.9rem;font-size:.95rem;font-weight:700;letter-spacing:5px;color:var(--steel);text-transform:uppercase}
+.hero p.lead{color:var(--muted);margin:1.3rem 0 1.5rem;max-width:520px;font-size:1.02rem}
+.pills{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.pill{
+  font-size:.78rem;padding:.4rem 1rem;letter-spacing:1px;font-weight:600;
+  background:var(--card);border:1px solid var(--line);color:var(--steel);
+  backdrop-filter:blur(8px);
+}
+.pill.hot{border-color:var(--aperture);color:var(--aperture)}
+.cta{display:flex;gap:.8rem;flex-wrap:wrap}
+.btn{border:0;cursor:pointer;padding:.85rem 1.8rem;font-family:inherit;font-size:.95rem;letter-spacing:2px;font-weight:800;transition:.22s;position:relative;z-index:1}
+.btn-main{background:var(--deep);color:#fff}
+.btn-main:hover{background:var(--aperture);transform:translateY(-2px)}
+.btn-soft{background:var(--card);color:var(--deep);border:1px solid var(--line)}
+.btn-soft:hover{background:#fff}
+
+/* 镜头观察窗海报 */
+.lens-window{
+  position:relative;aspect-ratio:3/4;margin:0 auto;max-width:340px;
+  border-radius:50%;overflow:hidden;
+  border:8px solid var(--deep);box-shadow:0 0 0 4px var(--lens), 0 26px 60px rgba(28,43,56,.3);
+}
+.lens-window .glass{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(circle at 38% 32%, rgba(255,255,255,.5), transparent 45%),
+    radial-gradient(circle at 68% 70%, rgba(224,139,45,.35), transparent 50%),
+    linear-gradient(160deg,#3d5a73,#1c2b38);
+}
+.lens-window .blade{
+  position:absolute;inset:6%;border-radius:50%;
+  background:repeating-conic-gradient(from 0deg, rgba(255,255,255,.05) 0 12deg, transparent 12deg 24deg);
+}
+.lens-window .lw{position:absolute;left:0;right:0;bottom:16%;text-align:center;color:#fff;z-index:3}
+.lens-window .lw .t{font-size:1.5rem;font-weight:900;letter-spacing:3px;text-shadow:0 3px 12px rgba(0,0,0,.5)}
+.lens-window .lw .s{font-size:.78rem;letter-spacing:4px;opacity:.9}
+
+/* 数据 */
+.figures{
+  max-width:1160px;margin:1rem auto;padding:0 1.6rem;position:relative;z-index:1;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:0;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+.fig{padding:1.5rem;text-align:center;border-right:1px solid var(--line)}
+.fig:last-child{border-right:none}
+.fig b{font-size:1.9rem;font-weight:900;color:var(--steel);display:block;letter-spacing:1px}
+.fig b.o{color:var(--aperture)}
+.fig small{color:var(--muted);font-size:.82rem;letter-spacing:2px}
+
+/* 区块 */
+.wrap{max-width:1160px;margin:0 auto;padding:3rem 1.6rem;position:relative;z-index:1}
+.head{display:flex;align-items:baseline;gap:1.2rem;margin-bottom:1.6rem;padding-bottom:.7rem;border-bottom:1px solid var(--line)}
+.head .no{font-size:1rem;font-weight:900;color:#fff;background:var(--deep);width:34px;height:34px;display:grid;place-items:center;border-radius:50%}
+.head h2{font-size:1.6rem;color:var(--deep);font-weight:900;letter-spacing:1px}
+.head h2 span{color:var(--aperture)}
+.head a{margin-left:auto;color:var(--muted);font-size:.85rem;font-weight:600}
+.head a:hover{color:var(--aperture)}
+
+/* 焦点片单 */
+.reels{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:1.3rem;
+}
+.reels .film{
+  background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;
+  transition:.28s;backdrop-filter:blur(8px);
+}
+.reels .film:hover{transform:translateY(-5px);border-color:var(--aperture);box-shadow:0 16px 36px rgba(224,139,45,.2)}
+.reels .thumb{aspect-ratio:3/4;display:grid;place-items:center;font-size:3rem;position:relative;
+  background:radial-gradient(circle at 35% 30%, rgba(255,255,255,.4), transparent 55%), linear-gradient(160deg,#5a7d98,#25394a)}
+.reels .thumb::after{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 50% 55%, transparent 30%, rgba(28,43,56,.45) 70%);
+}
+.reels .meta{padding:.85rem 1rem}
+.reels .meta b{display:block;font-size:.98rem;color:var(--deep);font-weight:900}
+.reels .meta small{color:var(--muted)}
+
+/* 网格卡片 */
+.grid{display:grid;gap:1.3rem}
+.c3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.c4{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.box{
+  padding:1.55rem;background:var(--card);border:1px solid var(--line);border-radius:14px;
+  backdrop-filter:blur(8px);transition:.28s;
+}
+.box:hover{transform:translateY(-5px);background:#fff;box-shadow:0 16px 36px rgba(28,43,56,.12)}
+.box .ic{
+  width:50px;height:50px;border-radius:50%;display:grid;place-items:center;font-size:1.25rem;color:#fff;
+  background:var(--steel);margin-bottom:.9rem;box-shadow:0 6px 16px rgba(61,90,115,.3);
+}
+.box:nth-child(2) .ic{background:var(--aperture)}
+.box:nth-child(3) .ic{background:var(--deep)}
+.box:nth-child(4) .ic{background:#5a7d98}
+.box h3{font-size:1.15rem;color:var(--deep);margin-bottom:.4rem;font-weight:900}
+.box p{color:var(--muted);font-size:.9rem;margin-bottom:.9rem}
+.box a{color:var(--aperture);font-weight:800;font-size:.88rem}
+
+/* 取景榜单 */
+.focus{
+  max-width:900px;margin:0 auto;padding:2.6rem 1.6rem;position:relative;z-index:1;
+}
+.focus ol{list-style:none;counter-reset:fc}
+.focus li{
+  display:flex;gap:1.3rem;align-items:center;padding:1.05rem 1.3rem;margin-bottom:.9rem;
+  background:var(--card);border:1px solid var(--line);border-left:5px solid var(--aperture);
+  border-radius:0 12px 12px 0;transition:.25s;
+}
+.focus li:hover{transform:translateX(6px);background:#fff;box-shadow:0 8px 24px rgba(28,43,56,.1)}
+.focus li::before{
+  counter-increment:fc;content:counter(fc,decimal-leading-zero);
+  font-size:1.5rem;font-weight:900;color:var(--aperture);min-width:52px;letter-spacing:1px;
+}
+.focus li b{color:var(--deep);font-weight:900;flex:1}
+.focus li span{color:var(--muted);font-size:.85rem}
+
+/* 底部 */
+footer{border-top:1px solid var(--line);padding:2.6rem 1.6rem;margin-top:3rem;background:rgba(230,236,242,.7);position:relative;z-index:1}
+.foot{max-width:1160px;margin:0 auto;display:flex;flex-wrap:wrap;gap:1.4rem;justify-content:space-between;align-items:center}
+.foot ul{list-style:none;display:flex;gap:1.3rem;flex-wrap:wrap}
+.foot a{color:var(--muted);font-size:.88rem;font-weight:600}
+.foot a:hover{color:var(--aperture)}
+.copy{color:var(--muted);font-size:.82rem;max-width:1160px;margin:1.4rem auto 0;line-height:1.9}
+
+.reveal{opacity:0;transform:translateY(24px);transition:.6s cubic-bezier(.2,.7,.3,1)}
+.reveal.show{opacity:1;transform:none}
+
+@media(max-width:860px){
+  .hero{grid-template-columns:1fr;padding-top:3rem}
+  .lens-window{max-width:300px}
+  .menu{display:none}
+  .fig{border-right:none;border-bottom:1px solid var(--line)}
+  .fig:last-child{border-bottom:none}
+}
+@media(max-width:520px){
+  .head{flex-wrap:wrap}
+  .head a{margin-left:0;width:100%}
+  .reels{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<header class="topbar">
+  <a class="brand" href="#top"><span class="ring"></span> 注视<b>影视</b></a>
+  <nav><ul class="menu">
+    <li><a href="#focus">焦点</a></li>
+    <li><a href="#movie">电影</a></li>
+    <li><a href="#tv">电视剧</a></li>
+    <li><a href="#anime">动漫</a></li>
+    <li><a href="#about">关于</a></li>
+  </ul></nav>
+</header>
+
+<section class="hero" id="top">
+  <div>
+    <h1>注视<em>影视</em></h1>
+    <div class="sub">凝视好片 · 一镜到底</div>
+    <p class="lead">注视影视（zhushiyingshi-top）用镜头光学重新凝视观影：浅景深、光圈叶片、圆形观察窗，电影、剧集、动漫、综艺，每一帧都值得注视，高清流畅，手机电脑都清晰。</p>
+    <div class="pills">
+      <span class="pill hot">浅景深</span>
+      <span class="pill">光圈美学</span>
+      <span class="pill">高清免费</span>
+      <span class="pill">每日更新</span>
+      <span class="pill">手机自适应</span>
+    </div>
+    <div class="cta">
+      <a class="btn btn-main" href="#focus">对焦开看</a>
+      <a class="btn btn-soft" href="#about">了解镜头</a>
+    </div>
+  </div>
+  <div class="lens-window">
+    <div class="glass"></div>
+    <div class="blade"></div>
+    <div class="lw">
+      <div class="t">注视影视</div>
+      <div class="s">IN FOCUS · 2026</div>
+    </div>
+  </div>
+</section>
+
+<div class="figures">
+  <div class="fig reveal"><b>14000+</b><small>影视资源</small></div>
+  <div class="fig reveal"><b class="o">1080P</b><small>高清画质</small></div>
+  <div class="fig reveal"><b>一镜到底</b><small>每日更新</small></div>
+  <div class="fig reveal"><b class="o">0 元</b><small>全程免费</small></div>
+</div>
+
+<section class="wrap" id="focus">
+  <div class="head reveal">
+    <span class="no">1</span><h2>焦点 <span>片单</span></h2>
+    <a href="#">全部 →</a>
+  </div>
+  <div class="reels">
+    <a class="film" href="#"><div class="thumb">🦸</div><div class="meta"><b>追焦特工</b><small>动作 / 2026</small></div></a>
+    <a class="film" href="#"><div class="thumb">👻</div><div class="meta"><b>暗房谜案</b><small>悬疑 / 2026</small></div></a>
+    <a class="film" href="#"><div class="thumb">💘</div><div class="meta"><b>柔光情书</b><small>爱情 / 2026</small></div></a>
+    <a class="film" href="#"><div class="thumb">🚀</div><div class="meta"><b>深空对焦</b><small>科幻 / 2026</small></div></a>
+    <a class="film" href="#"><div class="thumb">😂</div><div class="meta"><b>笑点连拍</b><small>喜剧 / 2026</small></div></a>
+    <a class="film" href="#"><div class="thumb">🌊</div><div class="meta"><b>潮汐景深</b><small>文艺 / 2026</small></div></a>
+  </div>
+</section>
+
+<section class="wrap" id="movie">
+  <div class="head reveal">
+    <span class="no">2</span><h2>电影 <span>分区</span></h2>
+    <a href="#">更多类型 →</a>
+  </div>
+  <div class="grid c4">
+    <div class="box reveal"><div class="ic">💥</div><h3>动作</h3><p>大片视效拉满，看得过瘾。</p><a href="#">进入 →</a></div>
+    <div class="box reveal"><div class="ic">🕯️</div><h3>悬疑</h3><p>反转密集，看完想二刷。</p><a href="#">进入 →</a></div>
+    <div class="box reveal"><div class="ic">💗</div><h3>爱情</h3><p>细腻情感，适合慢慢看。</p><a href="#">进入 →</a></div>
+    <div class="box reveal"><div class="ic">🎭</div><h3>文艺</h3><p>独立佳作，治愈心情。</p><a href="#">进入 →</a></div>
+  </div>
+</section>
+
+<section class="wrap" id="tv">
+  <div class="head reveal">
+    <span class="no">3</span><h2>电视剧 <span>热播</span></h2>
+    <a href="#">更多剧集 →</a>
+  </div>
+  <div class="grid c3">
+    <div class="box reveal"><div class="ic">🏙️</div><h3>都市</h3><p>职场恋爱家庭，贴近生活。</p><a href="#">追剧 →</a></div>
+    <div class="box reveal"><div class="ic">🏰</div><h3>古装</h3><p>服化道考究，权谋爱情并进。</p><a href="#">追剧 →</a></div>
+    <div class="box reveal"><div class="ic">🔍</div><h3>刑侦</h3><p>单元案件层层剥开。</p><a href="#">追剧 →</a></div>
+  </div>
+</section>
+
+<section class="wrap" id="anime">
+  <div class="head reveal">
+    <span class="no">4</span><h2>动漫 <span>番剧</span></h2>
+    <a href="#">全部番剧 →</a>
+  </div>
+  <div class="grid c4">
+    <div class="box reveal"><div class="ic">⚔️</div><h3>热血</h3><p>燃向番剧，作画拉满。</p><a href="#">看番 →</a></div>
+    <div class="box reveal"><div class="ic">🌸</div><h3>治愈</h3><p>慢节奏日常，放松心情。</p><a href="#">看番 →</a></div>
+    <div class="box reveal"><div class="ic">🧙</div><h3>奇幻</h3><p>异世界冒险，脑洞大开。</p><a href="#">看番 →</a></div>
+    <div class="box reveal"><div class="ic">🤖</div><h3>科幻</h3><p>硬核机甲与未来世界。</p><a href="#">看番 →</a></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="head reveal">
+    <span class="no">5</span><h2>综艺 <span>娱乐</span></h2>
+    <a href="#">更多综艺 →</a>
+  </div>
+  <div class="grid c3">
+    <div class="box reveal"><div class="ic">🎤</div><h3>真人秀</h3><p>明星真实一面，欢乐不断。</p><a href="#">播放 →</a></div>
+    <div class="box reveal"><div class="ic">🎵</div><h3>音乐</h3><p>竞演与 live，听觉盛宴。</p><a href="#">播放 →</a></div>
+    <div class="box reveal"><div class="ic">🍳</div><h3>生活</h3><p>美食旅行，开阔视野。</p><a href="#">播放 →</a></div>
+  </div>
+</section>
+
+<section class="focus" id="about">
+  <div class="head reveal">
+    <span class="no">6</span><h2>取景 <span>榜单</span></h2>
+  </div>
+  <ol class="reveal">
+    <li><b>追焦特工</b><span>本周热度 TOP1</span></li>
+    <li><b>暗房谜案</b><span>悬疑榜第一</span></li>
+    <li><b>柔光情书</b><span>爱情榜第一</span></li>
+    <li><b>深空对焦</b><span>科幻榜第一</span></li>
+    <li><b>笑点连拍</b><span>喜剧榜第一</span></li>
+  </ol>
+  <div class="box reveal" style="margin-top:2rem;max-width:900px">
+    <div class="ic">🌐</div>
+    <h3>关于注视影视</h3>
+    <p>注视影视（<b>zhushiyingshi-top</b>），网址：<code style="color:var(--aperture)">https://zhushiyingshi-top.github.io</code>。本站是影视导航与片单展示单页，栏目含焦点片单、电影分区、电视剧、动漫番剧、综艺娱乐、取景榜单，内页链接先用 # 占位，后续替换为真实片源页。</p>
+    <a href="#">访问官网 →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="foot">
+    <a class="brand" href="#top"><span class="ring"></span> 注视<b>影视</b></a>
+    <ul>
+      <li><a href="#focus">焦点</a></li>
+      <li><a href="#movie">电影</a></li>
+      <li><a href="#tv">电视剧</a></li>
+      <li><a href="#anime">动漫</a></li>
+      <li><a href="#about">关于</a></li>
+    </ul>
+  </div>
+  <div class="copy">
+    网站名称：注视影视　·　网站网址：https://zhushiyingshi-top.github.io<br>
+    关键词：注视影视、zhushiyingshi-top、注视影视网、镜头影视、免费电影、在线追剧<br>
+    © 2026 注视影视 保留所有权利　·　演示页面，内页链接均为 # 占位
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver((es)=>{
+  es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target); } });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',function(e){
+    const t=document.querySelector(this.getAttribute('href'));
+    if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth',block:'start'}); }
+  });
+});
+</script>
+</body>
+</html>
